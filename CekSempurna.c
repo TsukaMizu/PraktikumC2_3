@@ -16,13 +16,9 @@ int main()
     scanf("%d",&N);
 
     // Algoritma
-    while(i < N){
-        if(N % i == 0){
-            S = S + i;
-            i++;
-        }
-        else{
-            i++;
+    for (i = 1; i < N; i++) {
+        if (N % i == 0) {
+            S += i;
         }
     }
     if(S == N){
