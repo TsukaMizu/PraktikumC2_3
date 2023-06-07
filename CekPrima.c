@@ -8,29 +8,20 @@ int main()
 
     // Kamus Lokal
     int N,i,S;
-    i = 2;
-    S = 1;
+    i = 1;
+    S = 0;
 
     // Input Variabel
     printf("Masukkan bilangan : ");
     scanf("%d",&N);
 
     // Algoritma
-    while(i < N){
-        if(N % i == 0){
-            i = N;
-            S = 0;
-        }
-        else{
-            if(i == N-1){
-            i++;
-            }
-            else{
-                i++;
-            }
+   for (i = 2; i <= N/2; i++) {
+        if (N % i == 0) {
+            S++;
         }
     }
-	if (S == 1){
+	if (S == 0){
 		printf("Bilangan Prima");
 	}
 	else{
